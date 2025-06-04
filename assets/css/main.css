@@ -2022,7 +2022,11 @@ section,
   font-size: 25px;
 }
 
-.portfolio .isotope-container h4 , .portfolio .isotope-container p {
+.portfolio .isotope-container h3 , .portfolio .isotope-container p {
   display: inline-block;
-  width: 85%;
+  width: 80%;
+}
+
+.portfolio .portfolio-actions{
+  display: inline-block;
 }
