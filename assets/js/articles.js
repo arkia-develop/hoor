@@ -109,8 +109,46 @@ async function renderArticle() {
             loadingSpinner.style.display = 'none';
         }
 
-        // Update page title
-        document.title = `${article.title} | حور - نقل عفش الكويت`;
+        // Update page title and meta tags
+        document.title = article.title;
+        
+        // Update meta description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.content = article.description;
+        }
+
+        // Get related articles if they exist
+        let relatedArticlesHTML = '';
+        if (article.relatedArticles && article.relatedArticles.length > 0) {
+            const relatedArticles = await Promise.all(
+                article.relatedArticles.map(async (relatedId) => {
+                    const relatedArticle = await getArticleById(relatedId);
+                    return relatedArticle;
+                })
+            );
+
+            relatedArticlesHTML = `
+                <div class="related-articles">
+                    <h3>مقالات ذات صلة</h3>
+                    <div class="row">
+                        ${relatedArticles
+                            .filter(article => article !== null)
+                            .map(relatedArticle => `
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${relatedArticle.title}</h5>
+                                            <p class="card-text">${relatedArticle.description}</p>
+                                            <a href="article-view.html?article=${relatedArticle.id}" class="btn btn-primary">اقرأ المزيد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                    </div>
+                </div>
+            `;
+        }
 
         // Update article content
         const articleContainer = document.getElementById('article-container');
@@ -119,15 +157,22 @@ async function renderArticle() {
                 <div class="article-header">
                     <h1>${article.title}</h1>
                     <div class="article-meta">
-                        <span class="date">${article.date}</span>
+                        <span class="author"><i class="bi bi-person"></i> ${article.author}</span>
+                        <span class="date"><i class="bi bi-calendar"></i> ${article.date}</span>
+                        ${article.lastUpdated ? `<span class="last-updated"><i class="bi bi-clock-history"></i> آخر تحديث: ${article.lastUpdated}</span>` : ''}
+                        <span class="read-time"><i class="bi bi-clock"></i> ${article.readTime}</span>
+                    </div>
+                    <div class="article-keywords">
+                        ${article.keywords ? article.keywords.map(keyword => `<span class="badge bg-primary">${keyword}</span>`).join(' ') : ''}
                     </div>
                 </div>
-                <div class="article-image">
-                    <img src="${article.image}" alt="${article.alt}" class="img-fluid">
+                <div class="article-image text-center">
+                    <img src="${article.image}" alt="${article.alt}" class="img-fluid w-50">
                 </div>
                 <div class="article-content">
                     ${article.content}
                 </div>
+                ${relatedArticlesHTML}
             `;
         } else {
             console.error('Article container not found in DOM');
