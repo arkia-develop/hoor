@@ -1,0 +1,57 @@
+body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .article-header {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/transport-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .article-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .article-card:hover {
+      transform: translateY(-10px);
+    }
+    .article-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .article-body {
+      padding: 25px;
+    }
+    .service-feature {
+      text-align: center;
+      padding: 30px 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    .service-feature i {
+      font-size: 40px;
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+    .contact-box {
+      background: #3498db;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .contact-number {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
