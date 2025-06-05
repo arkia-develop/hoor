@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /assets/img/logo.png
+Allow: /assets/img/favicon.ico
+Allow: /assets/img/favicon-16x16.png
+Allow: /assets/img/favicon-32x32.png
+Allow: /assets/img/apple-touch-icon.png
+Allow: /assets/img/android-chrome-192x192.png
+Allow: /assets/img/android-chrome-512x512.png
+Allow: /site.webmanifest
+
+Sitemap: https://yourdomain.com/sitemap.xml 
