@@ -9,4 +9,4 @@ Allow: /assets/img/android-chrome-192x192.png
 Allow: /assets/img/android-chrome-512x512.png
 Allow: /site.webmanifest
 
-Sitemap: https://yourdomain.com/sitemap.xml 
+Sitemap: https://naqlafsha-hoor.com/sitemap.xml 
