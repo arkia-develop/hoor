@@ -14,7 +14,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #106eea; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #314057; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -22,7 +22,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #222222;  /* The default color of the main navmenu links */
-  --nav-hover-color: #106eea; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #314057; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -200,15 +200,14 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 55px;
+  margin-left: 8px;
 }
 
 .header .logo h1 {
   font-size: 30px;
-  margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .scrolled .header {
@@ -801,7 +800,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 13px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 8px 20px;
@@ -859,6 +858,7 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  color: var(--accent-color);
 }
 
 .hero h1 span {
@@ -2029,4 +2029,120 @@ section,
 
 .portfolio .portfolio-actions{
   display: inline-block;
+}
+
+/* Video Indicator Styles */
+.service-item {
+  transition: all 2s ease-in-out;
+  overflow: hidden;
+}
+
+.service-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-indicator {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.video-indicator i {
+  font-size: 1.5rem;
+  color: #fff;
+  animation: pulse 2s infinite;
+}
+
+.service-item:hover .video-indicator {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Make the entire service item clickable */
+.service-item .stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+/* Ensure the video indicator is above the stretched link */
+.video-indicator {
+  z-index: 2;
+}
+
+/* Add a subtle border animation on hover */
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover::before {
+  border-color: var(--primary-color);
+}
+
+/* Ensure text remains visible */
+.service-item h3,
+.service-item p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a subtle background color change on hover */
+.service-item:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+
+.article-card{
+  width: 100%;
+}
+
+.article-img img{
+  width: 100%;
+  padding: 4px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .article-img img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-img img {
+    height: 30vh;
+  }
 }
