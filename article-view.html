@@ -6,10 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Enhanced Title Tag with Primary Keyword First -->
-  <title>مقالات نقل العفش | نصائح وتجارب | حور لنقل العفش</title>
+  <title>مقالات نقل العفش | حور</title>
   
   <!-- Enhanced Meta Description -->
-  <meta name="description" content="مقالات ونصائح عن نقل العفش في الكويت - تعرف على أفضل الطرق لتغليف ونقل الأثاث، نصائح من خبراء نقل العفش، وأحدث التقنيات المستخدمة">
+  <meta name="description" content="مقالات ونصائح عن نقل العفش في الكويت - نصائح عملية وأفكار مفيدة لنقل آمن وسريع">
   
   <!-- Expanded Keywords List -->
   <meta name="keywords" content="مقالات نقل العفش, نصائح نقل الأثاث, تغليف العفش, نقل عفش آمن, نقل أثاث الكويت, شركة نقل عفش, نصائح نقل المنزل, نقل عفش محترف">
@@ -18,17 +18,12 @@
   <!-- <link rel="canonical" href="https://naqlafsha-hoor.com/article-view.html" /> -->
   
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="assets/img/favicon.ico" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:title" content="مقالات نقل العفش | نصائح وتجارب | حور لنقل العفش">
-  <meta property="og:description" content="مقالات ونصائح عن نقل العفش في الكويت - تعرف على أفضل الطرق لتغليف ونقل الأثاث، نصائح من خبراء نقل العفش، وأحدث التقنيات المستخدمة">
+  <meta property="og:title" content="مقالات نقل العفش | حور">
+  <meta property="og:description" content="مقالات ونصائح عن نقل العفش في الكويت - نصائح عملية وأفكار مفيدة لنقل آمن وسريع">
   <meta property="og:type" content="article">
   <!-- <meta property="og:url" content="https://naqlafsha-hoor.com/article-view.html"> -->
   <meta property="og:image" content="assets/img/logo.png">
@@ -36,8 +31,8 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="مقالات نقل العفش | نصائح وتجارب | حور لنقل العفش">
-  <meta name="twitter:description" content="مقالات ونصائح عن نقل العفش في الكويت - تعرف على أفضل الطرق لتغليف ونقل الأثاث، نصائح من خبراء نقل العفش، وأحدث التقنيات المستخدمة">
+  <meta name="twitter:title" content="مقالات نقل العفش | حور">
+  <meta name="twitter:description" content="مقالات ونصائح عن نقل العفش في الكويت - نصائح عملية وأفكار مفيدة لنقل آمن وسريع">
   <meta name="twitter:image" content="assets/img/logo.png">
 
   <!-- Geo and Business Meta Tags (for local SEO) -->
@@ -101,94 +96,367 @@
   <link rel="preload" href="assets/css/main.css" as="style">
 
   <style>
-    .article-container {
-      padding: 40px 0;
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #6c757d;
+      --accent-color: #ffc107;
+      --text-color: #333;
+      --light-bg: #f8f9fa;
+      --border-radius: 15px;
+      --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
     }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    /* Article Header */
     .article-header {
-      margin-bottom: 30px;
+      background: linear-gradient(135deg, rgba(13, 110, 253, 0.95), rgba(13, 110, 253, 0.85)), 
+                  url('assets/img/pattern.png');
+      padding: 120px 0 60px;
+      margin-bottom: 50px;
+      position: relative;
+      overflow: hidden;
     }
+
+    .article-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('assets/img/overlay.png');
+      opacity: 0.1;
+    }
+
+    .article-header::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(to bottom right, transparent 49%, var(--primary-color) 50%);
+      transform: skewY(-3deg);
+    }
+
+    .article-title {
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
     .article-meta {
-      color: #666;
-      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.2rem;
       display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
+
     .article-meta span {
       display: flex;
       align-items: center;
-      gap: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      backdrop-filter: blur(5px);
     }
+
     .article-meta i {
-      color: #0d6efd;
+      margin-left: 0.5rem;
+      color: var(--accent-color);
     }
-    .article-keywords {
-      margin: 15px 0;
-    }
-    .article-keywords .badge {
-      margin: 0 5px 5px 0;
-      padding: 8px 12px;
-      font-size: 0.9em;
-    }
+
+    /* Article Content */
     .article-content {
-      line-height: 1.8;
-      font-size: 1.1em;
+      background: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      padding: 3rem;
+      margin-top: -30px;
+      position: relative;
+      z-index: 1;
     }
+
     .article-content h2 {
-      margin: 30px 0 20px;
-      color: #333;
+      color: var(--primary-color);
+      margin: 2.5rem 0 1.5rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 1rem;
     }
+
+    .article-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-color);
+      border-radius: 3px;
+    }
+
     .article-content p {
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      color: var(--text-color);
     }
-    .article-content ul, .article-content ol {
-      margin-bottom: 20px;
-      padding-right: 20px;
+
+    .article-content ul {
+      margin-bottom: 2rem;
+      padding-right: 1.5rem;
     }
-    .article-content li {
-      margin-bottom: 10px;
+
+    .article-content ul li {
+      margin-bottom: 1rem;
+      position: relative;
+      padding-right: 1.5rem;
     }
-    .article-image {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border-radius: 8px;
+
+    .article-content ul li::before {
+      content: '•';
+      color: var(--primary-color);
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      font-size: 1.5rem;
     }
-    .related-articles {
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
+
+    /* Article Gallery */
+    .article-gallery {
+      margin: 3rem 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+      position: relative;
     }
-    .related-articles h3 {
-      margin-bottom: 25px;
-      color: #333;
+
+    .article-gallery::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
+      z-index: 1;
+      pointer-events: none;
     }
-    .related-articles .card {
-      margin-bottom: 20px;
+
+    .article-gallery .swiper-slide {
+      height: 600px;
+      background-size: cover;
+      background-position: center;
       transition: transform 0.3s ease;
     }
-    .related-articles .card:hover {
-      transform: translateY(-5px);
+
+    .article-gallery .swiper-slide:hover {
+      transform: scale(1.02);
     }
-    .related-articles .card-title {
-      color: #0d6efd;
-      margin-bottom: 10px;
+
+    .article-gallery .swiper-button-next,
+    .article-gallery .swiper-button-prev {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: var(--transition);
     }
-    .related-articles .card-text {
-      color: #666;
-      margin-bottom: 15px;
+
+    .article-gallery .swiper-button-next:hover,
+    .article-gallery .swiper-button-prev:hover {
+      background: var(--primary-color);
+      transform: scale(1.1);
     }
-    .loading-spinner {
-      display: none;
+
+    .article-gallery .swiper-button-next:after,
+    .article-gallery .swiper-button-prev:after {
+      font-size: 1.5rem;
+    }
+
+    .article-gallery .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      opacity: 0.5;
+      transition: var(--transition);
+    }
+
+    .article-gallery .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--primary-color);
+      transform: scale(1.2);
+    }
+
+    /* Article Tags */
+    .article-tags {
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background: var(--light-bg);
+      border-radius: var(--border-radius);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .article-tags span {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .article-tags span:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--box-shadow);
+      background: var(--accent-color);
+    }
+
+    /* Share Buttons */
+    .article-share {
+      margin: 3rem 0;
+      padding: 2rem;
+      border-top: 1px solid #eee;
       text-align: center;
-      padding: 20px;
     }
-    .error-message {
-      display: none;
-      color: #dc3545;
+
+    .article-share h3 {
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .article-share a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 0.8rem;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 50%;
+      transition: var(--transition);
+      font-size: 1.2rem;
+    }
+
+    .article-share a:hover {
+      transform: translateY(-5px) rotate(360deg);
+      box-shadow: var(--box-shadow);
+    }
+
+    .article-share a.facebook:hover {
+      background: #1877f2;
+    }
+
+    .article-share a.instagram:hover {
+      background: #e4405f;
+    }
+
+    .article-share a.whatsapp:hover {
+      background: #25d366;
+    }
+
+    /* Related Articles */
+    .related-articles {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 1px solid #eee;
+    }
+
+    .related-articles h3 {
+      color: var(--text-color);
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
       text-align: center;
-      padding: 20px;
+    }
+
+    .related-article-card {
+      background: #fff;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+      margin-bottom: 2rem;
+    }
+
+    .related-article-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .related-article-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .related-article-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .related-article-card h4 {
+      color: var(--text-color);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .related-article-card p {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .related-article-card .read-more {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .related-article-card .read-more:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      .article-header {
+        padding: 80px 0 40px;
+      }
+
+      .article-title {
+        font-size: 2rem;
+      }
+
+      .article-meta {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .article-content {
+        padding: 2rem;
+      }
+
+      .article-gallery .swiper-slide {
+        height: 300px;
+      }
+
+      .article-tags {
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -215,25 +483,107 @@
     </div>
   </header>
 
-  <main id="main" class="main">
-    <div class="container">
-      <!-- Loading Spinner -->
-      <div id="loading-spinner" class="loading-spinner">
-        <div class="spinner-border text-primary" role="status">
-          <span class="visually-hidden">جاري التحميل...</span>
+  <main id="main">
+    <!-- Article Header -->
+    <section class="article-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="article-title" id="article-title">عنوان المقال</h1>
+            <div class="article-meta">
+              <span><i class="bi bi-calendar"></i> <span id="article-date">تاريخ المقال</span></span>
+              <span><i class="bi bi-folder"></i> <span id="article-category">التصنيف</span></span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Error Message -->
-      <div id="error-message" class="error-message">
-        عذراً، حدث خطأ أثناء تحميل المقال. يرجى المحاولة مرة أخرى.
-      </div>
+    <!-- Article Content -->
+    <section class="article-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- Article Gallery -->
+            <div class="article-gallery">
+              <div class="swiper articleSwiper">
+                <div class="swiper-wrapper" id="article-gallery">
+                  <!-- Images will be loaded here -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
 
-      <!-- Article Container -->
-      <div id="article-container" class="article-container">
-        <!-- Content will be dynamically inserted here -->
+            <!-- Article Text Content -->
+            <div id="article-content">
+              <!-- Content will be loaded here -->
+            </div>
+
+            <!-- Article Tags -->
+            <div class="article-tags">
+              <span>نقل العفش</span>
+              <span>نصائح</span>
+              <span>الكويت</span>
+              <span>تغليف</span>
+              <span>فك وتركيب</span>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="article-share">
+              <h3>شارك المقال</h3>
+              <a href="#" class="facebook" onclick="shareOnFacebook()" aria-label="مشاركة على فيسبوك"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram" onclick="shareOnInstagram()" aria-label="مشاركة على انستجرام"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="whatsapp" aria-label="مشاركة على واتساب"><i class="bi bi-whatsapp"></i></a>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="related-articles">
+              <h3>مقالات ذات صلة</h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="related-article-card">
+                    <img src="assets/img/articles/fast-1.jpg" alt="نقل سريع">
+                    <div class="card-body">
+                      <h4>أسرار النقل السريع</h4>
+                      <p>تعرف على أفضل الطرق لنقل عفشك بسرعة وأمان</p>
+                      <a href="article-view.html?article=speed-moving" class="read-more">
+                        اقرأ المزيد <i class="bi bi-arrow-left"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="related-article-card">
+                    <img src="assets/img/articles/secure-1.jpg" alt="تغليف آمن">
+                    <div class="card-body">
+                      <h4>دليل التغليف الآمن</h4>
+                      <p>أفضل الطرق لتغليف أثاثك وحمايته أثناء النقل</p>
+                      <a href="article-view.html?article=packing-guide" class="read-more">
+                        اقرأ المزيد <i class="bi bi-arrow-left"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="related-article-card">
+                    <img src="assets/img/articles/seazon-1.jpg" alt="نقل موسمي">
+                    <div class="card-body">
+                      <h4>النقل الموسمي</h4>
+                      <p>أفضل الأوقات لنقل عفشك في الكويت</p>
+                      <a href="article-view.html?article=seasonal-moving" class="read-more">
+                        اقرأ المزيد <i class="bi bi-arrow-left"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -251,12 +601,50 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <!-- Facebook Share Modal -->
+  <div class="modal fade" id="facebookShareModal" tabindex="-1" aria-labelledby="facebookShareModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="facebookShareModalLabel">مشاركة المقال على فيسبوك</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <i class="bi bi-facebook text-primary" style="font-size: 3rem;"></i>
+          <p class="mt-3">سيتم فتح نافذة جديدة لمشاركة المقال</p>
+          <p>يمكنك إضافة تعليقك قبل المشاركة</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <button type="button" class="btn btn-primary" onclick="openFacebookShare()">
+            <i class="bi bi-facebook me-2"></i>مشاركة على فيسبوك
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instagram Share Modal -->
+  <div class="modal fade" id="instagramShareModal" tabindex="-1" aria-labelledby="instagramShareModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="instagramShareModalLabel">تم نسخ رابط المقال</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+          <p class="mt-3">تم نسخ رابط المقال بنجاح!</p>
+          <p>يمكنك الآن فتح حسابنا على انستجرام ومشاركة المقال مع متابعيك</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="https://www.instagram.com/naqlafsha_hoor/" target="_blank" class="btn btn-primary">
+            <i class="bi bi-instagram me-2"></i>فتح انستجرام
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Vendor JS Files -->
@@ -265,11 +653,214 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
 
-  <!-- Articles JS File -->
-  <script src="assets/js/articles.js"></script>
+    // Facebook sharing function
+    function shareOnFacebook() {
+      const modal = new bootstrap.Modal(document.getElementById('facebookShareModal'));
+      modal.show();
+      return false;
+    }
+
+    function openFacebookShare() {
+      const url = window.location.href;
+      const title = document.getElementById('article-title').textContent;
+      const content = document.getElementById('article-content').textContent;
+      
+      // Copy article content to clipboard
+      const textToCopy = `${title}\n\n${content}\n\n${url}`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        // Show success message in modal
+        const modalBody = document.querySelector('#facebookShareModal .modal-body');
+        modalBody.innerHTML = `
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+          <p class="mt-3">تم نسخ محتوى المقال بنجاح!</p>
+          <p>يمكنك الآن لصق المحتوى في منشورك على فيسبوك</p>
+        `;
+        
+        // Update footer buttons
+        const modalFooter = document.querySelector('#facebookShareModal .modal-footer');
+        modalFooter.innerHTML = `
+          <button type="button" class="btn btn-primary" onclick="window.open('https://www.facebook.com/', '_blank')">
+            <i class="bi bi-facebook me-2"></i>فتح فيسبوك
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        `;
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+
+    // Instagram sharing function
+    function shareOnInstagram() {
+      const url = window.location.href;
+      const title = document.getElementById('article-title').textContent;
+      const text = `${title}\n\nاقرأ المزيد: ${url}`;
+      
+      // Create a temporary textarea to copy the text
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+
+      // Show the modal
+      const modal = new bootstrap.Modal(document.getElementById('instagramShareModal'));
+      modal.show();
+    }
+
+    // Article data
+    const articles = {
+      'speed-moving': {
+        title: 'أسرار النقل السريع للعفش',
+        date: '15 يونيو 2023',
+        category: 'نصائح النقل',
+        content: `
+          <h2>كيفية نقل العفش بسرعة وأمان</h2>
+          <p>نقل العفش عملية تحتاج إلى تخطيط دقيق وتنظيم جيد. في هذا المقال، سنشارك معكم أهم النصائح لنقل سريع وآمن.</p>
+          
+          <h2>خطوات النقل السريع</h2>
+          <ul>
+            <li>التخطيط المسبق للمسار والوقت</li>
+            <li>تجهيز الأدوات والمعدات اللازمة</li>
+            <li>تغليف الأثاث بشكل صحيح</li>
+            <li>تنظيم عملية الفك والتركيب</li>
+          </ul>
+
+          <h2>نصائح مهمة</h2>
+          <p>تأكد من اختيار الوقت المناسب للنقل وتجنب ساعات الذروة. استخدم سيارات مجهزة وذات حجم مناسب.</p>
+        `,
+        images: ['fast-1.jpg', 'fast-2.jpg', 'fast-3.jpg', 'fast-4.jpg']
+      },
+      'packing-guide': {
+        title: 'دليل التغليف الآمن للأثاث',
+        date: '2 يوليو 2023',
+        category: 'تغليف العفش',
+        content: `
+          <h2>أساسيات التغليف الآمن</h2>
+          <p>التغليف الجيد هو المفتاح لحماية أثاثك أثناء النقل. تعرف على أفضل الطرق لتغليف مختلف أنواع الأثاث.</p>
+          
+          <h2>مواد التغليف الأساسية</h2>
+          <ul>
+            <li>كرتون مقوى</li>
+            <li>بلاستيك فقاعي</li>
+            <li>شريط لاصق</li>
+            <li>أكياس محكمة</li>
+          </ul>
+
+          <h2>خطوات التغليف</h2>
+          <p>ابدأ بالأشياء الصغيرة ثم انتقل إلى القطع الكبيرة. تأكد من تغليف الزوايا والحواف بشكل جيد.</p>
+        `,
+        images: ['secure-1.jpg', 'secure-2.jpg', 'secure-3.jpg', 'secure-4.jpg', 'secure-5.jpg']
+      },
+      'seasonal-moving': {
+        title: 'النقل الموسمي في الكويت',
+        date: '20 أغسطس 2023',
+        category: 'نصائح موسمية',
+        content: `
+          <h2>أفضل أوقات النقل</h2>
+          <p>اختيار الوقت المناسب للنقل يمكن أن يجعل العملية أسهل وأكثر راحة. تعرف على أفضل المواسم لنقل العفش في الكويت.</p>
+          
+          <h2>نصائح للنقل في الصيف</h2>
+          <ul>
+            <li>اختر الصباح الباكر</li>
+            <li>استخدم سيارات مكيفة</li>
+            <li>احمِ الأثاث من أشعة الشمس</li>
+            <li>اشرب الماء بانتظام</li>
+          </ul>
+
+          <h2>النقل في الشتاء</h2>
+          <p>تجنب الأيام الممطرة واختر الأيام المشمسة للنقل. تأكد من تغليف الأثاث بشكل جيد ضد الرطوبة.</p>
+        `,
+        images: ['seazon-1.jpg', 'seazon-2.jpg', 'seazon-3.jpg', 'seazon-4.jpg', 'seazon-5.jpg']
+      },
+      'office-moving': {
+        title: 'نقل المكاتب باحترافية',
+        date: '5 سبتمبر 2023',
+        category: 'نقل المكاتب',
+        content: `
+          <h2>تخطيط نقل المكتب</h2>
+          <p>نقل المكتب يتطلب تخطيطاً دقيقاً وتنظيماً جيداً لتجنب تعطيل العمل. تعرف على أفضل الطرق لنقل مكتبك.</p>
+          
+          <h2>خطوات النقل</h2>
+          <ul>
+            <li>تحديد موعد مناسب</li>
+            <li>تجهيز الملفات والمستندات</li>
+            <li>فك وتغليف الأجهزة</li>
+            <li>تنظيم عملية التركيب</li>
+          </ul>
+
+          <h2>نصائح مهمة</h2>
+          <p>قم بنقل الملفات المهمة بنفسك وتأكد من عمل نسخ احتياطية لجميع البيانات.</p>
+        `,
+        images: ['naql-1.jpg', 'naql-2.jpg', 'naql-3.jpg', 'naql-4.jpg']
+      }
+    };
+
+    // Load article data
+    function loadArticle() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('article');
+      const article = articles[articleId];
+
+      if (article) {
+        // Update article info
+        document.getElementById('article-title').textContent = article.title;
+        document.getElementById('article-date').textContent = article.date;
+        document.getElementById('article-category').textContent = article.category;
+        document.getElementById('article-content').innerHTML = article.content;
+
+        // Load images
+        const galleryContainer = document.getElementById('article-gallery');
+        galleryContainer.innerHTML = article.images.map(img => `
+          <div class="swiper-slide" style="background-image: url('assets/img/articles/${img}')"></div>
+        `).join('');
+
+        // Initialize Swiper
+        new Swiper('.articleSwiper', {
+          effect: 'fade',
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+
+        // Update page title
+        document.title = `${article.title} | حور لنقل العفش`;
+
+        // Update social share links
+        const shareUrl = encodeURIComponent(window.location.href);
+        const shareTitle = encodeURIComponent(article.title);
+        
+        // Update WhatsApp share link
+        document.querySelector('.whatsapp').href = `https://wa.me/?text=${shareTitle}%20${shareUrl}`;
+      } else {
+        // Handle article not found
+        document.getElementById('article-title').textContent = 'المقال غير موجود';
+        document.getElementById('article-content').innerHTML = '<p>عذراً، المقال الذي تبحث عنه غير موجود.</p>';
+      }
+    }
+
+    // Load article when page loads
+    document.addEventListener('DOMContentLoaded', loadArticle);
+  </script>
 
 </body>
 </html> 
