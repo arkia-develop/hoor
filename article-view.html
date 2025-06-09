@@ -229,10 +229,14 @@
       right: 0;
       font-size: 1.5rem;
     }
-    .related-articles {
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
+
+    /* Article Gallery */
+    .article-gallery {
+      margin: 3rem 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+      position: relative;
     }
 
     .article-gallery::before {
@@ -529,9 +533,17 @@
             <!-- Share Buttons -->
             <div class="article-share">
               <h3>شارك المقال</h3>
-              <a href="#" class="facebook" onclick="shareOnFacebook()" aria-label="مشاركة على فيسبوك"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram" onclick="shareOnInstagram()" aria-label="مشاركة على انستجرام"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="whatsapp" aria-label="مشاركة على واتساب"><i class="bi bi-whatsapp"></i></a>
+              <div class="share-buttons">
+                <a href="#" onclick="return shareOnFacebook()" class="share-btn facebook" aria-label="مشاركة على فيسبوك">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" onclick="return shareOnInstagram()" class="share-btn instagram" aria-label="مشاركة على انستجرام">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" onclick="return shareOnWhatsApp()" class="share-btn whatsapp" aria-label="مشاركة على واتساب">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
             </div>
 
             <!-- Related Articles -->
@@ -597,6 +609,29 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
+  <!-- WhatsApp Share Modal -->
+  <div class="modal fade" id="whatsappShareModal" tabindex="-1" aria-labelledby="whatsappShareModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="whatsappShareModalLabel">مشاركة المقال على واتساب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <i class="bi bi-whatsapp text-success" style="font-size: 3rem;"></i>
+          <p class="mt-3">سيتم نسخ محتوى المقال</p>
+          <p>يمكنك لصقه في محادثة واتساب</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <button type="button" class="btn btn-success" onclick="shareOnWhatsApp()">
+            <i class="bi bi-whatsapp me-2"></i>مشاركة على واتساب
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Facebook Share Modal -->
   <div class="modal fade" id="facebookShareModal" tabindex="-1" aria-labelledby="facebookShareModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -657,6 +692,44 @@
       once: true,
       mirror: false
     });
+
+    // WhatsApp sharing function
+    function shareOnWhatsApp() {
+      const url = window.location.href;
+      const title = document.getElementById('article-title').textContent;
+      const content = document.getElementById('article-content').textContent;
+      
+      // Copy article content to clipboard
+      const textToCopy = `${title}\n\n${content}\n\n${url}`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        // Show the modal
+        const modal = new bootstrap.Modal(document.getElementById('whatsappShareModal'));
+        
+        // Update modal content
+        const modalBody = document.querySelector('#whatsappShareModal .modal-body');
+        modalBody.innerHTML = `
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+          <p class="mt-3">تم نسخ محتوى المقال بنجاح!</p>
+          <p>يمكنك الآن لصق المحتوى في محادثة واتساب</p>
+        `;
+        
+        // Update footer buttons with direct WhatsApp chat link
+        const modalFooter = document.querySelector('#whatsappShareModal .modal-footer');
+        modalFooter.innerHTML = `
+          <button type="button" class="btn btn-success" onclick="window.open('https://wa.me/96566401171', '_blank')">
+            <i class="bi bi-whatsapp me-2"></i>فتح محادثة واتساب
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        `;
+        
+        // Show the modal
+        modal.show();
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+      
+      return false;
+    }
 
     // Facebook sharing function
     function shareOnFacebook() {
