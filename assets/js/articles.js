@@ -104,6 +104,15 @@ async function renderArticle() {
             return;
         }
 
+        // Generate gallery images based on article ID
+        const baseImageName = article.image.split('/').pop().split('.')[0].split('-')[0];
+        const galleryImages = [];
+        for (let i = 1; i <= 5; i++) {
+            const imagePath = `assets/img/articles/${baseImageName}-${i}.jpg`;
+            galleryImages.push(imagePath);
+        }
+        article.gallery = galleryImages;
+
         // Hide loading spinner
         if (loadingSpinner) {
             loadingSpinner.style.display = 'none';
