@@ -6,21 +6,21 @@
   
   <!-- Main Pages -->
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://naqlafsha-hoor.com/</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>https://yourdomain.com/article-view.html</loc>
+    <loc>https://naqlafsha-hoor.com/article-view.html</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -28,28 +28,28 @@
 
   <!-- Article Pages -->
   <url>
-    <loc>https://yourdomain.com/article-view.html?article=speed-moving</loc>
+    <loc>https://naqlafsha-hoor.com/article-view.html?article=speed-moving</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/article-view.html?article=packing-guide</loc>
+    <loc>https://naqlafsha-hoor.com/article-view.html?article=packing-guide</loc>
     <lastmod>2024-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/article-view.html?article=seasonal-moving</loc>
+    <loc>https://naqlafsha-hoor.com/article-view.html?article=seasonal-moving</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/article-view.html?article=office-moving</loc>
+    <loc>https://naqlafsha-hoor.com/article-view.html?article=office-moving</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -57,189 +57,189 @@
 
   <!-- Portfolio Project Pages -->
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=house1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=house1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=office1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=office1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=appliances1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=appliances1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=express1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=express1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=luxury1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=luxury1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=packing1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=packing1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=local1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=local1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=storage1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=storage1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=heavy1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=heavy1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=commercial1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=commercial1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=small-apartment</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=small-apartment</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=villa-moving</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=villa-moving</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=hotel-moving</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=hotel-moving</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=full-packing</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=full-packing</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=international</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=international</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=assembly</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=assembly</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=seasonal</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=seasonal</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=medical</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=medical</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=government</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=government</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=art-gallery</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=art-gallery</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=warehouse</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=warehouse</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=admin-office</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=admin-office</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=school</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=school</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=wedding-hall</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=wedding-hall</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=theater</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=theater</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=gym</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=gym</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/portfolio-details.html?project=door1</loc>
+    <loc>https://naqlafsha-hoor.com/portfolio-details.html?project=door1</loc>
     <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
