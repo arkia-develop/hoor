@@ -327,6 +327,325 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .error-container {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 40px auto;
+    max-width: 600px;
+  }
+
+  .error-container i {
+    font-size: 64px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+
+  .error-container h2 {
+    color: var(--dark-color);
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .error-container p {
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .error-container .btn-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 30px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .error-container .btn-home:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+  }
+
+  .portfolio-not-found {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #fff;
+  }
+
+  .not-found-box {
+    text-align: center;
+    max-width: 400px;
+    padding: 40px;
+    background: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  }
+
+  .not-found-box i {
+    font-size: 50px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+
+  .not-found-box h2 {
+    font-size: 24px;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .not-found-box p {
+    color: var(--text-color);
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .not-found-box .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .not-found-box .btn:hover {
+    background: var(--primary-color);
+  }
+
+  .service-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .service-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  .service-item:hover .service-img img {
+    transform: scale(1.1);
+  }
+
+  .service-content {
+    padding: 20px;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+
+  .service-content p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  .service-content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .service-content .btn:hover {
+    background: var(--primary-color);
+  }
+
+  @media (max-width: 768px) {
+    .service-img {
+      height: 180px;
+    }
+    
+    .service-content h3 {
+      font-size: 18px;
+    }
+  }
+
+  .services-section {
+    background: var(--light-color);
+    margin-top: 40px;
+  }
+
+  .services-section h2 {
+    color: var(--dark-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .services-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+  }
+
+  .service-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .service-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  .service-item:hover .service-img img {
+    transform: scale(1.1);
+  }
+
+  .service-content {
+    padding: 20px;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+  }
+
+  .service-content p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  .service-content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .service-content .btn:hover {
+    background: var(--primary-color);
+  }
+
+  @media (max-width: 768px) {
+    .services-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .service-img {
+      height: 180px;
+    }
+    
+    .service-content h3 {
+      font-size: 18px;
+    }
+  }
+
+  .not-found-title {
+    font-size: 32px;
+    color: var(--dark-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .not-found-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+  }
+
+  @media (max-width: 768px) {
+    .not-found-title {
+      font-size: 28px;
+    }
+  }
+
+  .not-found-gif {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .not-found-title {
+      font-size: 28px;
+    }
+    .not-found-gif {
+      max-width: 250px;
+    }
+  }
   </style>
 
 </head>
@@ -349,12 +668,12 @@
 
         <nav id="navmenu" class="navmenu" role="navigation" aria-label="القائمة الرئيسية">
           <ul>
-            <li><a href="#hero" class="active">الرئيسية</a></li>
-            <li><a href="#about">معلومات عنا</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#portfolio">اعمالنا</a></li>
-            <li><a href="#articles">مقالات</a></li>
-            <li><a href="#contact">تواصل منا</a></li>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="index.html#about">معلومات عنا</a></li>
+            <li><a href="index.html#services">خدماتنا</a></li>
+            <li><a href="index.html#portfolio">اعمالنا</a></li>
+            <li><a href="index.html#articles">مقالات</a></li>
+            <li><a href="index.html#contact">تواصل منا</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -456,15 +775,15 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Get project ID from URL
+    const main = document.querySelector('main');
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('project');
 
-    // Load services data
     fetch('assets/data/services.json')
       .then(response => response.json())
       .then(data => {
-        if (data[projectId]) {
+        if (projectId && data[projectId]) {
+          // Show specific project details
           const project = data[projectId];
           
           // Update main content
@@ -473,7 +792,6 @@
           document.getElementById('project-title').textContent = project.title;
           document.getElementById('service-title').textContent = project.title;
           document.getElementById('service-description').textContent = project.description;
-          // document.getElementById('video-link').href = project.video;
           document.getElementById('video-link').href = project.video;
           document.getElementById('video-link').ariaLabel = project.description;
           document.getElementById('details-title').textContent = 'تفاصيل الخدمة';
@@ -511,19 +829,59 @@
             }
           });
         } else {
-          // Handle case when project is not found
-          document.querySelector('.container').innerHTML = `
-            <div class="alert alert-danger" role="alert">
-              لم يتم العثور على المشروع المطلوب
+          // Clear main content and show not found message
+          main.innerHTML = `
+            <div class="container">
+              <div class="text-center mb-5">
+                <img src="https://media.giphy.com/media/3o7aCQd06IUJTnE9WQ/giphy.gif" alt="404" class="not-found-gif">
+                <h2 class="not-found-title">هذه الخدمة غير موجودة</h2>
+              </div>
             </div>
           `;
         }
+
+        // Add services section
+        const servicesSection = document.createElement('section');
+        servicesSection.className = 'services-section py-5';
+        servicesSection.innerHTML = `
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-12">
+                <h2 class="text-center mb-4">خدماتنا</h2>
+              </div>
+              ${Object.entries(data).map(([id, service]) => `
+                <div class="col-lg-4 col-md-6">
+                  <div class="service-item">
+                    <div class="service-img">
+                      <img src="${service.image}" alt="${service.title}" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                      <h3>${service.title}</h3>
+                      <p>${service.description}</p>
+                      <a href="portfolio-details.html?project=${id}" class="btn btn-primary">
+                        عرض التفاصيل
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+        main.appendChild(servicesSection);
       })
       .catch(error => {
         console.error('Error loading project data:', error);
-        document.querySelector('.container').innerHTML = `
-          <div class="alert alert-danger" role="alert">
-            حدث خطأ أثناء تحميل بيانات المشروع
+        main.innerHTML = `
+          <div class="container">
+            <div class="text-center mb-5">
+              <h2 class="not-found-title">حدث خطأ</h2>
+              <p class="mt-3">عذراً، حدث خطأ أثناء تحميل البيانات. يرجى المحاولة مرة أخرى.</p>
+              <button onclick="window.location.reload()" class="btn btn-primary mt-3">
+                <i class="bi bi-arrow-clockwise"></i>
+                إعادة المحاولة
+              </button>
+            </div>
           </div>
         `;
       });
