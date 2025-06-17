@@ -1,0 +1,19 @@
+# Set correct MIME types for JavaScript files
+AddType application/javascript .js
+AddType text/javascript .js
+
+# Ensure proper encoding
+AddDefaultCharset UTF-8
+
+# Enable compression for JavaScript files
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE text/javascript
+</IfModule>
+
+# Set cache headers for JavaScript files
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+</IfModule> 
