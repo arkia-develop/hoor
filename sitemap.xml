@@ -7,14 +7,14 @@
   <!-- Main Pages -->
   <url>
     <loc>https://naqlafsha-hoor.com/</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://naqlafsha-hoor.com/index.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -22,28 +22,28 @@
   <!-- Article Pages -->
   <url>
     <loc>https://naqlafsha-hoor.com/article-speed-moving.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://naqlafsha-hoor.com/article-packing-guide.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://naqlafsha-hoor.com/article-seasonal-moving.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://naqlafsha-hoor.com/article-office-moving.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,7 +51,7 @@
   <!-- Portfolio Tour Guide -->
   <url>
     <loc>https://naqlafsha-hoor.com/portfolio-details.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -59,21 +59,28 @@
   <!-- Individual Portfolio Pages -->
   <url>
     <loc>https://naqlafsha-hoor.com/portfolio-house1.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://naqlafsha-hoor.com/portfolio-office1.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://naqlafsha-hoor.com/portfolio-appliances1.html</loc>
-    <lastmod>2024-03-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://naqlafsha-hoor.com/portfolio-storage1.html</loc>
+    <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

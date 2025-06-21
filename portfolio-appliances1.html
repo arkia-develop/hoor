@@ -78,6 +78,34 @@
   }
   </script>
 
+  <!-- Breadcrumb Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "الرئيسية",
+        "item": "https://naqlafsha-hoor.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "أعمالنا",
+        "item": "https://naqlafsha-hoor.com/#portfolio"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "سيارات مبطنة ومجهزة",
+        "item": "https://naqlafsha-hoor.com/portfolio-appliances1.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="story-portfolio-page">
@@ -113,6 +141,17 @@
     </div>
 
   </header>
+
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="breadcrumb-nav" dir="rtl">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="index.html#portfolio">أعمالنا</a></li>
+        <li class="breadcrumb-item active" aria-current="page">سيارات مبطنة ومجهزة</li>
+      </ol>
+    </div>
+  </nav>
 
   <main id="main">
     <!-- Story Hero Section -->
@@ -307,6 +346,63 @@
         </div>
       </div>
     </section>
+    
+    <!-- Related Articles Section -->
+    <section class="related-articles" dir="rtl">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fade-in-up">أعمالنا ذات الصلة</h2>
+            <p class="fade-in-up">شاهد المزيد من مشاريعنا المتميزة</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card fade-in-up">
+              <div class="portfolio-image">
+                <img src="assets/img/hoors/img/video-1-cover.png" alt="تغليف أثاث فاخر" loading="lazy">
+              </div>
+              <div class="portfolio-content">
+                <h4>تغليف أثاث فاخر</h4>
+                <p>خدمة تغليف أثاث فاخر باحترافية مع مواد عالية الجودة</p>
+                <a href="portfolio-house1.html" class="btn-view-project">
+                  عرض المشروع <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card fade-in-up">
+              <div class="portfolio-image">
+                <img src="assets/img/hoors/img/video-2-cover.png" alt="فك وتركيب باحتراف" loading="lazy">
+              </div>
+              <div class="portfolio-content">
+                <h4>فك وتركيب باحتراف</h4>
+                <p>فك وتركيب الأثاث بأدوات متخصصة وفريق مدرب</p>
+                <a href="portfolio-office1.html" class="btn-view-project">
+                  عرض المشروع <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card fade-in-up">
+              <div class="portfolio-image">
+                <img src="assets/img/portfolio/item-7.jpg" alt="خدمات التخزين" loading="lazy">
+              </div>
+              <div class="portfolio-content">
+                <h4>خدمات التخزين</h4>
+                <p>تخزين آمن ومرن لجميع احتياجاتك</p>
+                <a href="portfolio-storage1.html" class="btn-view-project">
+                  عرض المشروع <i class="bi bi-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Call to Action -->
     <section class="story-cta" dir="rtl">
       <div class="container">

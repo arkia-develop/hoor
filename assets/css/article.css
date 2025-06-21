@@ -402,3 +402,75 @@ body {
         justify-content: center;
       }
     }
+
+    /* Related Portfolio Section */
+    .related-portfolio {
+      background: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .portfolio-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .portfolio-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .portfolio-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover .portfolio-image img {
+      transform: scale(1.1);
+    }
+
+    .portfolio-content {
+      padding: 25px;
+    }
+
+    .portfolio-content h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--dark-color);
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .portfolio-content p {
+      color: var(--text-color);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn-view-project {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-view-project:hover {
+      color: #0b5ed7;
+      transform: translateX(-5px);
+    }
