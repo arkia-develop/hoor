@@ -45,107 +45,166 @@
   </script>
 </head>
 
-<body>
+<body class="story-portfolio-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+  <!-- Added ARIA landmarks for better accessibility -->
+  <header id="header" class="header sticky-top" role="banner" dir="rtl">
 
-      <div class="logo">
-        <h1><a href="index.html">هور للنقل والتخزين</a></h1>
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <!-- Added aria-label for logo link -->
+        <a href="index.html" class="logo d-flex align-items-center" aria-label="الصفحة الرئيسية">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo-rmbg.png" alt="حور لنقل العفش">
+          <!-- <img src="assets/img/logo.png" alt="حور لنقل العفش">  -->
+          <h1 class="sitename">حور</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu" role="navigation" aria-label="القائمة الرئيسية">
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#about">معلومات عنا</a></li>
+            <li><a href="index.html#services">خدماتنا</a></li>
+            <li><a href="index.html#portfolio">اعمالنا</a></li>
+            <li><a href="index.html#articles">مقالات</a></li>
+            <li><a href="index.html#contact">تواصل منا</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
       </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html#hero">الرئيسية</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">من نحن</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">خدماتنا</a></li>
-          <li><a class="nav-link scrollto active" href="index.html#portfolio">أعمالنا</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">اتصل بنا</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
 
     </div>
+
   </header>
 
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="breadcrumb-nav" dir="rtl">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="index.html#portfolio">أعمالنا</a></li>
+        <li class="breadcrumb-item active" aria-current="page">خدمات التخزين</li>
+      </ol>
+    </div>
+  </nav>
+
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!-- Story Hero Section -->
+    <section class="story-hero" dir="rtl">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>خدمات التخزين</h2>
-          <ol>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="index.html#portfolio">أعمالنا</a></li>
-            <li>خدمات التخزين</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
+        <div class="row align-items-center">
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/item-7.jpg" alt="مستودعات تخزين آمنة">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/item-8.jpg" alt="تخزين الأثاث">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/item-9.jpg" alt="مستودعات منظمة">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+            <h1 class="fade-in-up">قصة نجاح: خدمات تخزين آمنة ومرنة</h1>
+            <p class="fade-in-up">تعرف كيف نوفر حلول تخزين متخصصة تناسب جميع احتياجاتك، من التخزين قصير المدى إلى التخزين طويل الأمد.</p>
+            <a href="#journey" class="btn-story fade-in-up">
+              <i class="bi bi-play-circle me-2"></i>شاهد القصة كاملة
+            </a>
           </div>
-
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>معلومات المشروع</h3>
-              <ul>
-                <li><strong>نوع الخدمة</strong>: خدمات التخزين</li>
-                <li><strong>العميل</strong>: شركات وأفراد</li>
-                <li><strong>تاريخ المشروع</strong>: 2024</li>
-                <li><strong>المدة</strong>: مستمر</li>
-                <li><strong>الموقع</strong>: دبي، الإمارات</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>خدمات التخزين المتخصصة</h2>
-              <p>
-                نقدم حلول تخزين آمنة ومرنة تناسب جميع احتياجاتك. من التخزين قصير المدى إلى التخزين طويل الأمد، 
-                نوفر لك مساحات تخزين نظيفة ومنظمة مع ضمان أمان ممتلكاتك.
-              </p>
+            <div class="text-center">
+              <img src="assets/img/portfolio/item-7.jpg" alt="خدمات التخزين" class="img-fluid rounded-3 shadow-lg">
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>مميزات خدمات التخزين</h2>
-          <p>لماذا تختار خدمات التخزين من هور؟</p>
+    <!-- Customer Journey Section -->
+    <section id="journey" class="customer-journey" dir="rtl">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fade-in-up">رحلة العميل مع حور</h2>
+            <p class="fade-in-up">من التخزين المؤقت إلى التخزين طويل المدى</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="journey-step fade-in-up">
+              <div class="step-number">1</div>
+              <h4>التواصل الأولي</h4>
+              <p>تواصل العميل لطلب خدمات تخزين آمنة</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="journey-step fade-in-up">
+              <div class="step-number">2</div>
+              <h4>تقييم الاحتياجات</h4>
+              <p>فريقنا يحدد المساحة والخدمات المطلوبة</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="journey-step fade-in-up">
+              <div class="step-number">3</div>
+              <h4>التخزين الآمن</h4>
+              <p>تخزين الممتلكات في مستودعات آمنة ومكيفة</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="journey-step fade-in-up">
+              <div class="step-number">4</div>
+              <h4>الوصول المرن</h4>
+              <p>إمكانية الوصول للمستودع في أي وقت</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Process Timeline -->
+    <section class="process-timeline" dir="rtl">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fade-in-up">الخطوات التفصيلية</h2>
+            <p class="fade-in-up">كيف نقدم خدمات التخزين خطوة بخطوة</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item slide-in-left">
+            <div class="timeline-content">
+              <h4>تقييم المساحة</h4>
+              <p>تحديد المساحة المطلوبة ونوع التخزين المناسب</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item slide-in-right">
+            <div class="timeline-content">
+              <h4>تجهيز المستودع</h4>
+              <p>تجهيز مساحة تخزين نظيفة ومكيفة</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item slide-in-left">
+            <div class="timeline-content">
+              <h4>التخزين الآمن</h4>
+              <p>تخزين الممتلكات مع ضمان الأمان والحماية</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item slide-in-right">
+            <div class="timeline-content">
+              <h4>المراقبة المستمرة</h4>
+              <p>مراقبة مستمرة للمستودع وضمان سلامة الممتلكات</p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment Gallery -->
+    <section class="equipment-gallery" dir="rtl">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <h2 class="fade-in-up">المميزات والخدمات</h2>
+            <p class="fade-in-up">ما يميز خدمات التخزين من حور</p>
+          </div>
+        </div>
+        
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="equipment-item fade-in-up">
