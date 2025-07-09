@@ -1,0 +1,45 @@
+/* Force responsive container and row */
+.container, .row {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Hide problematic pseudo-elements */
+.container::before,
+.container::after,
+.row::before,
+.row::after {
+  display: none !important;
+}
+
+/* Fix card and image overflow */
+.article-card-tour, .card-img, .card-body {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Mobile grid fix */
+@media (max-width: 768px) {
+  .row.g-4 > [class^="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Ensure .row uses flex */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Debug: Uncomment to outline all elements */
+/*
+* {
+  outline: 1px solid red !important;
+}
+*/ 
