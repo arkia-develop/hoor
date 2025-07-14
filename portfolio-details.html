@@ -439,7 +439,101 @@
 
         <!-- Portfolio Grid -->
         <div class="portfolio-grid" id="portfolio-grid">
-          <!-- Portfolio cards will be loaded here -->
+          <!-- Portfolio Card 1 -->
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-number">1</div>
+            <div class="card-image">
+              <img src="assets/img/hoors/img/video-1-cover.png" alt="تغليف بأعلى جودة" loading="lazy">
+              <div class="card-overlay">
+                <button class="play-button glightbox" data-gallery="portfolio-house1" data-glightbox="assets/img/hoors/video/hoor-video-1.mp4">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">تغليف بأعلى جودة</h3>
+              <p class="card-description">نستخدم مواد تغليف متينة، بطبقات متعددة من الحماية، لنضمن بقاء كل قطعة سليمة وكأنها لم تتحرك من مكانها.</p>
+              <ul class="card-features">
+                <li>تغليف محترف لكل أنواع الأثاث</li>
+                <li>حماية خاصة للقطع الحساسة</li>
+                <li>مواد تغليف مستوردة عالية الجودة</li>
+              </ul>
+              <div class="card-actions">
+                <a href="portfolio-house1.html" class="btn-view">
+                  <i class="bi bi-eye"></i>
+                  عرض التفاصيل
+                </a>
+                <a href="assets/img/hoors/video/hoor-video-1.mp4" class="btn-video glightbox" data-gallery="portfolio-house1">
+                  <i class="bi bi-play-circle"></i>
+                  شاهد الفيديو
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Card 2 -->
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-number">2</div>
+            <div class="card-image">
+              <img src="assets/img/hoors/img/video-2-cover.png" alt="فك وتركيب باحتراف" loading="lazy">
+              <div class="card-overlay">
+                <button class="play-button glightbox" data-gallery="portfolio-office1" data-glightbox="assets/img/hoors/video/hoor-video-2.mp4">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">فك وتركيب باحتراف</h3>
+              <p class="card-description">نملك أدوات خاصة وعمالاً يعرفون جيدًا أسرار فك الأثاث الخشبي والمعدني وتركيبه دون أي ضرر أو خدش.</p>
+              <ul class="card-features">
+                <li>فك وتركيب جميع أنواع الأثاث</li>
+                <li>أدوات متخصصة حديثة</li>
+                <li>فريق مدرب على أعلى مستوى</li>
+              </ul>
+              <div class="card-actions">
+                <a href="portfolio-office1.html" class="btn-view">
+                  <i class="bi bi-eye"></i>
+                  عرض التفاصيل
+                </a>
+                <a href="assets/img/hoors/video/hoor-video-2.mp4" class="btn-video glightbox" data-gallery="portfolio-office1">
+                  <i class="bi bi-play-circle"></i>
+                  شاهد الفيديو
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Card 3 -->
+          <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-number">3</div>
+            <div class="card-image">
+              <img src="assets/img/hoors/img/video-3-cover.png" alt="سيارات مبطنة ومجهزة" loading="lazy">
+              <div class="card-overlay">
+                <button class="play-button glightbox" data-gallery="portfolio-appliances1" data-glightbox="assets/img/hoors/video/hoor-video-3.mp4">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">سيارات مبطنة ومجهزة</h3>
+              <p class="card-description">جميع سياراتنا مصممة خصيصًا لنقل العفش، مغلقة من الداخل، ومبطنة لحماية الأغراض من الصدمات والحرارة.</p>
+              <ul class="card-features">
+                <li>سيارات مغلقة ومكيفة</li>
+                <li>نظام تثبيت متطور</li>
+                <li>سائقين محترفين</li>
+              </ul>
+              <div class="card-actions">
+                <a href="portfolio-appliances1.html" class="btn-view">
+                  <i class="bi bi-eye"></i>
+                  عرض التفاصيل
+                </a>
+                <a href="assets/img/hoors/video/hoor-video-3.mp4" class="btn-video glightbox" data-gallery="portfolio-appliances1">
+                  <i class="bi bi-play-circle"></i>
+                  شاهد الفيديو
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Tour Footer -->
@@ -520,83 +614,20 @@
       }
     }
 
-    // Load portfolio data and create tour
-    fetch('assets/data/services.json')
-      .then(response => response.json())
-      .then(data => {
-        const portfolioGrid = document.getElementById('portfolio-grid');
-        let cardNumber = 1;
-        
-        Object.entries(data).forEach(([id, project]) => {
-          const card = document.createElement('div');
-          card.className = 'portfolio-card';
-          card.setAttribute('data-aos', 'fade-up');
-          card.setAttribute('data-aos-delay', cardNumber * 100);
-          
-          card.innerHTML = `
-            <div class="card-number">${cardNumber}</div>
-            <div class="card-image">
-              <img src="${project.image}" alt="${project.title}" loading="lazy">
-              <div class="card-overlay">
-                <button class="play-button glightbox" data-gallery="portfolio-${id}" data-glightbox="${project.video}">
-                  <i class="bi bi-play-fill"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">${project.title}</h3>
-              <p class="card-description">${project.description}</p>
-              <ul class="card-features">
-                ${project.features.slice(0, 3).map(feature => `<li>${feature}</li>`).join('')}
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio-${id}.html" class="btn-view">
-                  <i class="bi bi-eye"></i>
-                  عرض التفاصيل
-                </a>
-                <a href="${project.video}" class="btn-video glightbox" data-gallery="portfolio-${id}">
-                  <i class="bi bi-play-circle"></i>
-                  شاهد الفيديو
-                </a>
-              </div>
-            </div>
-          `;
-          
-          portfolioGrid.appendChild(card);
-          cardNumber++;
-        });
-        
-        // Initialize AOS
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-          once: true
-        });
-        
-        // Initialize GLightbox
-        GLightbox({
-          selector: '.glightbox',
-          touchNavigation: true,
-          loop: true,
-          autoplayVideos: true
-        });
-      })
-      .catch(error => {
-        console.error('Error loading portfolio data:', error);
-        const portfolioGrid = document.getElementById('portfolio-grid');
-        portfolioGrid.innerHTML = `
-          <div class="col-12 text-center">
-            <div class="alert alert-danger" role="alert">
-              <i class="bi bi-exclamation-triangle"></i>
-              عذراً، حدث خطأ أثناء تحميل البيانات. يرجى المحاولة مرة أخرى.
-              <button onclick="window.location.reload()" class="btn btn-outline-danger ms-3">
-                <i class="bi bi-arrow-clockwise"></i>
-                إعادة المحاولة
-              </button>
-            </div>
-          </div>
-        `;
-      });
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    
+    // Initialize GLightbox
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
   });
   </script>
 
